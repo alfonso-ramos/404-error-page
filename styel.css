@@ -1,0 +1,96 @@
+:root {
+    --mainFont: monospace;
+    --secondaryFont: 'Inconsolata', monospace;
+    --primaryColor: #333333;
+    --secundaryGray:#4F4F4F;
+    --gray: #BDBDBD;
+}
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--mainFont);
+    color: var(--primaryColor);
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+/* Globals */
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 4.8rem;
+}
+p{
+    font-size: 1.8rem;
+}
+img{
+    max-width: 100%;
+}
+/* Utilities */
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
+.text-center{
+    text-align: center;
+}
+/* Header section */
+header .title{
+    color: var(--secundaryGray);
+    font-family: var(--secondaryFont);
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+@media (min-width: 768px){
+    header .title{
+        margin: 4rem 0;
+    }
+}
+/* Main section */
+main .scarecrow-img{
+    margin: 6rem 0;
+}
+main h1{
+    line-height: 7rem;
+}
+main p{
+    line-height: 2.7rem;
+}
+main a{
+    background-color: var(--primaryColor);
+    color: white;
+    display: inline-block;
+    padding: 2.4rem 4.3rem;
+    margin: 6.6rem 0;
+}
+@media (min-width: 768px){
+    main{
+        margin: 16rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10rem;
+
+    }
+}
+/* Footer section */
+footer p{
+    color: var(--gray);
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 2.4rem 0;
+}
